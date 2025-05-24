@@ -1,0 +1,73 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dashboard - Código Espiritual</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="barra-superior">
+		<div class="login-rapido">
+			<input type="text" placeholder="Usuario">
+			<input type="password" placeholder="Contraseña">
+			<button onclick="window.location.href='login.html'">Ingresar</button>
+		</div>
+	</header>
+
+	<div class="contenedor-principal">
+		<aside class="barra-lateral">
+			<div class="logo">
+				<img src="assets/logo.png" alt="Logo Código Espiritual">
+			</div>
+			<nav class="navegacion">
+				<ul class="nav-list">
+					<li><a href="#" class="activo">Videos</a></li>
+					<li><a onclick="window.location.href='Guias.html'" href="#">Guías</a></li>
+					<li><a href="#">Mentorías</a></li>
+					<li><a href="#">Podcast</a></li>
+					<li><a href="#">En vivo</a></li>
+					<li><a href="#">Workbook</a></li>
+					<li><a href="#">Donaciones</a></li>
+				</ul>
+			</nav>
+		</aside>
+	<main class="contenido">
+		<div class="contenido">
+			<div class="video-grid">
+				<div class="video-item">
+					<iframe src="https://www.youtube.com/embed/inpok4MKVLM" 
+						title="Meditación 5 minutos" 
+						allowfullscreen>
+					</iframe>
+					<p>Meditación de Atención Plena de 5 minutos</p>
+				</div>
+				<div class="video-item">
+					<iframe src="https://www.youtube.com/embed/X3-gKPNyrTA" 
+						title="Guía Honesta" 
+						allowfullscreen></iframe>
+					<p>Meditación la guía honesta</p>
+				</div>
+				<div class="video-item">
+					<iframe src="https://www.youtube.com/embed/9-IOMXpv7Ys" 
+						title="Mindfulness 10 min" 
+					allowfullscreen></iframe>
+					<p>Meditación dedicada 10 minutos</p>
+				</div>
+				<div class="video-item">
+					<iframe src="https://www.youtube.com/embed/1ZYbU82GVz4" 
+					title="Música para meditar" 
+					allowfullscreen></iframe>
+					<p>Música para meditar</p>
+				</div>
+			</div>
+		</div>
+
+	</main>
+	</div>
+<footer class="footer">
+	<p>© 2025 Código Espiritual. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>

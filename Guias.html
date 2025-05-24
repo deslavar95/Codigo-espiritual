@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guias - Código Espiritual</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="barra-superior">
+		<div class="login-rapido">
+			<input type="text" placeholder="Usuario">
+			<input type="password" placeholder="Contraseña">
+			<button onclick="window.location.href='login.html'">Ingresar</button>
+		</div>
+	</header>
+
+	<div class="contenedor-principal">
+		<aside class="barra-lateral">
+			<div class="logo">
+				<img src="assets/logo.png" alt="Logo Código Espiritual">
+			</div>
+			<nav class="navegacion">
+				<ul class="nav-list">
+					<li><a onclick="window.location.href='Index.html'" href="#" >Videos</a></li>
+					<li><a href="#"class="activo">Guías</a></li>
+					<li><a href="#">Mentorías</a></li>
+					<li><a href="#">Podcast</a></li>
+					<li><a href="#">En vivo</a></li>
+					<li><a href="#">Workbook</a></li>
+					<li><a href="#">Donaciones</a></li>
+				</ul>
+			</nav>
+		</aside>
+
+		<main class="contenido">
+			<div class="pdf-container">
+				<iframe 
+					src="assets/guia1.pdf#toolbar=0&navpanes=0&scrollbar=1"
+					type="application/pdf"
+					frameborder="0"
+					width="100%"
+					height="600px">
+				</iframe>
+			</div>
+			
+		</main>
+	</div>
+	<footer class="footer">
+		<p>© 2025 Código Espiritual. Todos los derechos reservados.</p>
+	</footer>
+	<script src="Js/proteccion.js"></script>
+</body>
+</html>

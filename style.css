@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+
+.barra-superior {
+  height: 50px;
+  background-color: #6a0dad;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.barra-superior input[type="text"],
+.barra-superior input[type="password"] {
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.barra-superior button {
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: none;
+  background-color: white;
+  color: #6a0dad;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contenedor-principal {
+  display: flex;
+  height: calc(100% - 50px);
+}
+
+.barra-lateral {
+  width: 190px;
+  background-color: #ccc;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px; 
+}
+
+.logo img {
+  width: 60%;
+  padding: 10px;
+  object-fit: contain;
+}
+
+.navegacion ul {
+  list-style: none;
+  width: 100%;
+}
+
+.navegacion li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  background-color: #ddd;
+  margin-bottom: 2px;
+}
+
+.navegacion li a:hover {
+  background-color: #bbb;
+}
+
+.contenido {
+  flex: 1;
+  background-color: white;
+}
+
+.footer {
+  background-color: #4a0080;
+  color: white;
+  text-align: center;
+  padding: 4px 0;         
+  font-size: 0.75rem;    
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-list a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  background-color: #e0e0e0;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+
+.nav-list a:hover:not(.activo) {
+  background-color: #bbb;
+}
+
+
+.nav-list a.activo {
+  background-color: #fff;
+  border-left: 4px solid purple;
+}
+
+
+.contenido {
+  padding: 15px;
+  flex: 1;
+  background-color: white;
+  overflow-y: auto;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.video-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-item iframe {
+  width: 100%;
+  height: 180px;
+  border: 4px solid rebeccapurple;
+  border-radius: 6px;
+}
+
+.video-item p {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.pdf-container {
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  height: 100%;
+}
